@@ -3,6 +3,12 @@ body {
   color: white;
 }
 
+@media (max-width: 720px) {
+  body {
+    padding-top: 75px;
+  }
+}
+
 .header {
   text-align: center;
 }
@@ -28,7 +34,14 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {        
   background-color: rgba(0, 0, 0, 0.496);
   backdrop-filter: blur(5px);
+  height: 75px
 }
+
+/* @media (max-width: @screen-xs) {
+  .navbar {
+    position: relative;
+  }
+} */
 
 /* KETUA UMUM */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
@@ -58,7 +71,7 @@ html {
 .slider-card {
   background: #fff;
   padding: 0px 0px;
-  margin: 50px 15px 90px 15px;
+  margin: 50px 15px 60px 15px;
   border-radius: 5px;
   box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
   transform: scale(0.9);
@@ -131,5 +144,21 @@ html {
 
 .nama, .jabatan {
   text-shadow: 0px 4px 10px #000000;
+  font-size: 2vmin;
+}
+
+.desc-hero {
   font-size: 3vmin;
+}
+
+.news-cont {
+  transition: all .15s;
+}
+
+.news-cont:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+.news-cont:hover .n {
+  color: #1e1e1e;
 }
