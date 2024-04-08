@@ -124,10 +124,12 @@ html {
 
 .nama {
   padding-bottom: 2px;
+  text-align: center;
   border-bottom: 1px solid white;
   margin: 0;
 }
 
 .nama, .jabatan {
   text-shadow: 0px 4px 10px #000000;
+  font-size: 3vmin;
 }
