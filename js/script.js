@@ -13,7 +13,7 @@ $(document).ready(function(){
       ],
       responsive:{
           0:{
-              items:3
+              items:2
           },
           600:{
               items:3
