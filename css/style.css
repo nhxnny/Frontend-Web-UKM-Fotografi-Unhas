@@ -1,6 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
   color: white;
+  /* background-image: url(/asset/images/download.jpeg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat-y; */
 }
 
 @media (max-width: 720px) {
@@ -37,12 +41,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 75px
 }
 
-/* @media (max-width: @screen-xs) {
-  .navbar {
-    position: relative;
-  }
-} */
-
 /* KETUA UMUM */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
 html {
@@ -66,6 +64,14 @@ html {
 
 .slider .owl-item.active.center .detail-ketum {
   opacity: 1;
+  background-color: rgba(0, 0, 0, 0.47);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-card {
@@ -131,8 +137,10 @@ html {
 
 .detail-ketum {
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   opacity: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .nama {
@@ -147,12 +155,16 @@ html {
   font-size: 2vmin;
 }
 
+.jabatan  {
+  margin: 0;
+}
+
 .desc-hero {
   font-size: 3vmin;
 }
 
 .news-cont {
-  transition: all .15s;
+  transition: all 1s;
 }
 
 .news-cont:hover {
@@ -162,3 +174,17 @@ html {
 .news-cont:hover .n {
   color: #1e1e1e;
 }
+
+.b-example-divider {
+  height: 1rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.address {
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
